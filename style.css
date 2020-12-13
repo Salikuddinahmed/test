@@ -1,0 +1,160 @@
+body{
+	background-color: #d2e9e1;
+	color:#555;
+	font-family: verdana;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-header{
+	background-color:#6bb6bc;
+	color: white;
+}
+
+#navbar{
+	background-color: #077b88;
+	color: #fff;
+
+}
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#showcase{
+	/*background-image: url('images/showcase.jpg');  for image*/
+	background-color:#016064;
+	background-position: center right;
+	min-height:300px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: white;
+}
+
+#showcase h1{
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}
+
+#main{
+	float: left;
+	width: 70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background:#077b88;
+	color: #fff;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+
+#main-footer{
+	background: #333;
+	color: white;
+	text-align: center;
+	padding:20px;
+	margin-top: 40px;
+}
+
+@media(max-width: 600px){
+	#main{
+		width: 100%;
+		float: none;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+}
+/*flexbox part*/
+/*flexbox part*/
+/*flexbox part*/
+/*flexbox part*/
+/*flexbox part*/
+/*flexbox part*/
+
+@media(min-width: 768px){
+	.container-1{
+	display: flex;
+	/*
+	align-items: flex-end; flex-start; center;
+	default is stretch shifts certain items as per need
+	
+	flex-direction: column; to make the boxes in column format
+
+	justify-content: flex-start; left aligns the boxes in the container
+	justify-content: flex-end;
+	justify-content: center;
+	justify-content: space-around; adds space to borders as well
+
+	*/
+	}
+
+	.container-2{
+	display: flex;
+	justify-content: space-between;
+	}
+}
+
+.container-3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+
+.container-1 div,.container-2 div, .container-3 div{
+	margin: 5px;
+	border: 1px #ccc solid;
+	padding: 10px;
+
+}
+
+.box-1{
+	flex:2;
+	order:2;
+}
+
+.box-2{
+	flex:1;
+	order:1;
+}
+
+.box-3{
+	flex:1;
+	order:3;
+}
+
+.container-2-box{
+	flex-basis: 30%;/*same as width*/
+}
+
+.container-3-box{
+	flex-basis: 14%;/*same as width*/
+}
